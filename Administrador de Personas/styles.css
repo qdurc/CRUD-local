@@ -1,0 +1,155 @@
+:root{
+    --colorPrincipal: #A9A9A9;
+    --colorSecundario: #FF3B3F;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    min-width: fit-content;
+}
+body {
+    background-color: white;
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-titulo {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.logoIntec{
+    max-width: 100%;
+    height: 9rem;
+    margin: 1rem;
+}
+
+.contenedor {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 768px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* ESTILOS FORMULARIO */
+.contenedor .div-formulario {
+    width: 20%;
+    height: 250px;
+    margin: 15px 15px;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+.contenedor .div-formulario h2 {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2rem;
+}
+.contenedor .div-formulario form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor .div-formulario form input{
+    width: 60%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid var(--colorPrincipal);
+    outline: none;
+}
+
+.contenedor .div-formulario form button {
+    width: 40%;
+    padding: 6px 6px;
+    margin: 6px 6px;
+    border-radius: 1.5rem;
+    border: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+.contenedor .btn-agregar:hover{
+    background-color: var(--colorSecundario);
+}
+
+/* ESTILOS LISTADO */
+.contenedor .div-listado {
+    width: 55%;
+    height: calc(100% - 50px);
+    margin: 15px 15px;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.contenedor .div-listado h2 {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2rem;
+}
+.contenedor .div-listado .div-personas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 0 15px;
+}
+.contenedor .div-listado .div-personas p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+hr {
+    width: 100%;
+    height: 1px;
+}
+.btn {
+    padding: 5px 10px;
+    border: none;
+    margin: 0 5px;
+    color: white;
+    border-radius: 50px;
+}
+.btn-editar {
+    background-color: green;
+    color: green;
+    display: inline-block;
+    background-image: url(/img/pencil-square.svg);
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+}
+.btn-eliminar {
+    background-color: red;
+    color: red;
+    display: inline-block;
+    background-image: url(/img/trash.svg);
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+}
